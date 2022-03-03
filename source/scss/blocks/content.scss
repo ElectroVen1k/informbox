@@ -1,0 +1,58 @@
+.content {
+  background-color: $color-white;
+  margin: 0 auto;
+  max-width: 640px;
+  margin-top: 80px;
+  border-radius: 3px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px 15px;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    color: $color-black;
+  }
+
+  &__reset {
+    font-family: "SegoeUI", "Arial", sans-serif;
+    background-color: $color-white;
+    color: $color-blue;
+    font-size: 16px;
+    line-height: 21px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: color $trans--300;
+    display: flex;
+    align-items: center;
+
+    svg {
+      fill: $color-blue;
+      margin-right: 5px;
+      transition: fill $trans--300;
+    }
+
+    @include hover {
+      color: fade-out($color-blue, 0.3);
+
+      svg {
+        fill: fade-out($color-blue, 0.3);
+      }
+    }
+
+    &:disabled {
+      pointer-events: none;
+      color: $color-grey;
+
+      svg {
+        fill: $color-grey;
+      }
+    }
+  }
+}

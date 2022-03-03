@@ -1,0 +1,54 @@
+{
+  "name": "",
+  "private": true,
+  "description": "",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.0.0",
+    "autoprefixer": "9.8.4",
+    "browser-sync": "^2.26.14",
+    "del": "^5.1.0",
+    "eslint": "^7.25.0",
+    "eslint-config-htmlacademy": "^3.0.0",
+    "gulp": "4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-less": "4.0.1",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "2.6.5",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.1",
+    "node-sass": "^5.0.0",
+    "stylelint": "13.6.1",
+    "stylelint-config-htmlacademy": "0.1.4"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/scss/**/*.scss\" --syntax scss",
+    "eslint": "eslint source/js",
+    "eslint:fix": "eslint source/js --fix",
+    "test": "npm run stylelint && npm run editorconfig",
+    "build": "gulp build",
+    "start": "gulp build && gulp dev"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "editorconfig-cli": [
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/scss/**/*.scss"
+  ],
+  "engines": {
+    "node": "12.18.2"
+  },
+  "dependencies": {}
+}

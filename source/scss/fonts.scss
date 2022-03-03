@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "SegoeUI";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    url("../fonts/SegoeUI.woff2") format("woff2"), /* Super Modern Browsers */
+    url("../fonts/SegoeUI.woff") format("woff"); /* Modern Browsers */
+}
+
+@font-face {
+  font-family: "SegoeUI";
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    url("../fonts/SegoeUIBold.woff2") format("woff2"), /* Super Modern Browsers */
+    url("../fonts/SegoeUIBold.woff") format("woff"); /* Modern Browsers */
+}
